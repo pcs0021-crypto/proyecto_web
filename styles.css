@@ -13,12 +13,15 @@
 
 body {
     font-family: "Instrument Serif";
+    background-color: #f00;
+    background-color: #181818;
     
 }
 
 body, header, ul, li, nav, p, div, a {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -27,26 +30,31 @@ body, header, ul, li, nav, p, div, a {
     display: flex;
     width: 100vw;
     height: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 3rem;
-    background-color: #ddd;
+    background-color: #282828;
     z-index: 1;
     
 }
 
 .header__image {
+    display: grid;
     width: 64px;
+    margin-left: 5px;
 }
 
 
 
 .header__nav-button {
     font-weight: 800;
+    color: #fff;
+    margin-right: 20px;
 }
 
 #nav-checkbox{
     display: none;
+    color: white;
 }
 
 .header__list-nav {
@@ -61,12 +69,14 @@ label {
 }
 
 #nav-checkbox:checked ~ .header__list-nav {
+    font-family: "Bebas Neue";
     width: 100%;
     height: 80vh;
-    background-color: yellow;
+    background-color: #383838;
     display: flex;
     position: absolute;
     flex-direction: column;
+    justify-content: space-evenly;
     top: 80px;
     left: 0;
     z-index: 1;
@@ -76,29 +86,432 @@ label {
     text-align: center;
     margin: 30px 0px;
     justify-content: space-around;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .header__list-item a {
+    display: block;
     text-decoration: none;
-    color: #122f4a;
-    padding: 8px;
+    color: #ddd;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
     
 }
 
 /*-----HEADER-------*/
 
 
-/*-----MAIN-------*/
+/*-----INICIO-------*/
+    /*-----PORTADA-------*/
 .portada {
     font-family: "Bebas Neue", sans-serif;
     display: flex;
+    flex-direction: column;
+    background-image: 
+    linear-gradient(to top, #181818 12% , #0000 60%), 
+    url('img/bg_hor_inicio.png');
+    background-color: #181818;
+    background-position: 51% -300%;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.portada__texto {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7%;
+}
+
+.portada__texto h2 {
+
+    font-size: 2.9em;
+    padding: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    letter-spacing: 3px;
+    text-wrap: pretty;
+    text-align: center;
+    color: #fff;
+}
+
+.portada__texto p {
+    font-size: 1.7em;
+    font-weight: 100;
+    margin-top: 10px;
+    padding: 0px 50px;
+    text-wrap: pretty;
+    text-align: center;
+    color: #fff;
 }
 
 .portada__boton {
     font-family: "Bebas Neue", sans-serif;
-    background-color: #1b1b1b; 
-    color: #fff;
-    border-radius: 8px;
+    font-size: 1.8em;
+    background-color: #eee; 
+    width: 50%;
+    padding: 5px 0;
+    color: #000;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+    /*-----PORTADA-------*/
+    /*-----CUERPO-------*/
+
+.inicio__cuerpo {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.inicio-seccion {
+    width: 100%;
+    font-family: "Staatliches", sans-serif;
+    margin-bottom: 30px;
 }
 
-/*-----MAIN-------*/
+.seccion__titulo {
+    margin: 5px 20px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.inicio--carrusel {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+}
+
+.proximo-torneo {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    width: 90vw;
+    min-width: 90%;
+    height: 65vh;
+    margin: 20px 10px 20px 8px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #aaa;
+    text-decoration: none;
+}
+
+
+.torneo__img {
+    height: 65%;
+    width: 100%;
+    background-position: 60% 50%;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+.torneo__img1 {
+    background-image: url(img/futsal_img.png);
+}
+.torneo__img2 {
+    background-image: url(img/baloncesto_img.png);
+    background-position: 50% 50%;
+}
+.torneo__img3 {
+    background-image: url(img/volleyball_img.png);
+}
+
+.torneo--turno {
+    background-color: #f4f4f4;
+    color: #181818;
+    width: 25%;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 20px;
+}
+
+.torneo__info {
+    height: 35%;
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.info--titulo {
+    font-size: 1.8em;
+    margin: 2% 5%;
+    margin-bottom: 1%;
+}
+
+.info--fecha {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 1% 5%;
+    margin-bottom: 1%;
+}
+
+.deporteNumero {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.deporteNumero h4 {
+    font-size: 1.55em;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    margin: 1% 5%;
+    margin-right: 1%;
+}
+
+.deporteNumero h4:last-child {
+    background-color:#0000;
+    color: #ddd;
+    font-size: 1.4em;
+
+}
+
+
+.seccion2--cuerpo {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    background: linear-gradient(to bottom, #444, #181818);
+}
+
+.seccion2--img {
+    background-image: url(img/premios.png);
+    margin: auto;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.seccion2--cuerpo h4 {
+    color: #fff;
+    font-size: 2.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.seccion2--cuerpo p {
+    font-family: "Montserrat";
+    color: #cdcdcd;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+    /*-----CUERPO-------*/
+    
+    /*-----FOOTER-------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #aaa;
+    background-color: #282828;
+    font-family: "Montserrat";
+}
+
+.fotter--media h3 {
+    color: #fff;
+    width: 100%;
+    font-size: 2.3rem;
+    font-style: italic;
+    font-family: "Bebas Neue";
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 2px;
+}
+
+.media--icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+    
+.media--enlace {
+    display: grid;
+    place-items: center;
+    margin: 10px 15px;
+    width: 55px;
+    height: 55px;
+    color: #cdcdcd;
+}
+
+.media--enlace:hover {
+    background-color: blue;
+}
+
+.footer--cuerpo{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.footer--link {
+    text-decoration: none;
+    margin: auto;
+    color: #cdcdcd;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.footer--creditos {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--creditos p {
+    text-align: center;
+    margin: 10px;
+}
+    /*-----FOOTER-------*/
+/*-----INICIO-------*/
+
+/*-----TORNEOS-------*/
+.deportes__list {
+    font-family: "Bebas Neue";
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: #181818;
+    padding: 10px 0;
+    background: linear-gradient(to right, #131313, #999);
+    min-height: 20px;
+    gap: 20px;
+}
+
+.deportes__list--item {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    background-color: #efefef;
+    border-radius: 5px;
+    margin: auto 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 40%;
+}
+
+.deportes__list--item label{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 2px;
+}
+
+.seleccion--turnos {
+    display: flex;
+    background-color: #aaa;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    
+}
+
+.seleccion--turnos label {
+    margin: auto;
+    background-color: #efefef;
+    font-family: "Bebas Neue";
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+#turno-manana:checked ~ .seleccion__deportes .seleccion--turnos label[for="turno-manana"],
+#turno-tarde:checked ~ .seleccion__deportes .seleccion--turnos label[for="turno-tarde"] {
+    background-color: #ffcc00;
+    color: black;
+}
+
+
+#ver-futbol:checked ~ .seleccion__deportes .deportes__list--item:has([for="ver-futbol"]),
+#ver-volley:checked ~ .seleccion__deportes .deportes__list--item:has([for="ver-volley"]),
+#ver-baloncesto:checked ~ .seleccion__deportes .deportes__list--item:has([for="ver-baloncesto"]),
+#ver-pickelball:checked ~ .seleccion__deportes .deportes__list--item:has([for="ver-pickelball"]) {
+    background-color: #ffcc00;
+    color: black;
+}
+
+    /*-----TABLAS-------*/
+.seccion__tablas {
+    display: none;
+    color: white;
+    font-family: "Montserrat";
+    margin: 0 10px;
+}
+
+
+
+#turno-tarde:checked ~ #ver-futbol:checked ~ .seccion__tablas.futbol.tarde,
+#turno-manana:checked ~ #ver-volley:checked ~ .seccion__tablas.volley.mananas,
+#turno-tarde:checked ~ #ver-volley:checked ~ .seccion__tablas.volley.tarde,
+#turno-manana:checked ~ #ver-baloncesto:checked ~ .seccion__tablas.baloncesto.mananas,
+#turno-tarde:checked ~ #ver-baloncesto:checked ~ .seccion__tablas.baloncesto.tarde,
+#turno-manana:checked ~ #ver-pickelball:checked ~ .seccion__tablas.pickelball.mananas,
+#turno-tarde:checked ~ #ver-pickelball:checked ~ .seccion__tablas.pickelball.tarde,
+#turno-manana:checked ~ #ver-futbol:checked ~ .seccion__tablas.futbol.mananas {
+    display: block;
+}
+
+.seccion__tablas h2 {
+    color: #efefef;
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 2.6em;
+}
+
+.tabla__clasificacion {
+    border-collapse: collapse; 
+    width: 100%; 
+    text-align: center;
+}
+
+.tabla__clasificacion thead th {
+    font-size: 1.1rem;
+    height: 50px;
+    background-color: #444;
+}
+
+.tabla__clasificacion th{
+    padding: 5px 10px;
+}
+.tabla__clasificacion td {
+    height: 70px;
+}
+
+.tabla__clasificacion--cuerpo tr td:first-child{
+    font-family: "Bebas Neue";
+    font-size: 2em;
+}
+
+.tabla__clasificacion--cuerpo tr:first-child td:first-child{
+    box-shadow: inset 5px 0 0 0 #0f0;
+}
+
+.tabla__clasificacion--cuerpo tr:last-child td:first-child{
+    box-shadow: inset 5px 0 0 0 #f00;
+}
+
+
+    /*-----TABLAS-------*/
+
+
+/*-----TORNEOS-------*/

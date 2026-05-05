@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo Medac</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__image">
+            <img src="img/logo.png" class="header__image" alt="">
+        </div>
+        <nav class="header__nav">
+            <input type="checkbox" id="nav-checkbox">
+            <label class="header__nav-button" for="nav-checkbox">=</label>
+            <ul class="header__list-nav">
+                <li class="header__list-item"><a href="index.html">Inicio</a></li>
+                <li class="header__list-item"><a href="#">Torneos</a></li>
+                <li class="header__list-item"><a href="inscripcion.html">Inscripcion</a></li>
+                <li class="header__list-item"><a href="">Premios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="radio" name="turno" id="turno-manana" checked hidden>
+        <input type="radio" name="turno" id="turno-tarde" hidden>
+
+        <input type="radio" name="ver-deportes" id="ver-futbol" checked hidden>
+        <input type="radio" name="ver-deportes" id="ver-volley" hidden>
+        <input type="radio" name="ver-deportes" id="ver-baloncesto" hidden>
+        <input type="radio" name="ver-deportes" id="ver-pickelball" hidden>
+        
+        <div class="seleccion__deportes">
+            <div class="seleccion--turnos">
+                <label for="turno-manana">Mañanas</label>
+                <label for="turno-tarde">Tardes</label>
+            </div>
+
+            <ul class="deportes__list">
+                <li class="deportes__list--item"> <label for="ver-futbol">Futbol</label></li>
+                <li class="deportes__list--item"> <label for="ver-volley">Voleibol</label></li>
+                <li class="deportes__list--item"> <label for="ver-baloncesto">Baloncesto</label></li>
+                <li class="deportes__list--item"> <label for="ver-pickelball">Pickelball</label></li>
+            </ul>
+        </div>
+
+        <div class="seccion__tablas  futbol tarde">
+            <h2>Futbol Sala (Tardes)</h2>
+        
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>Goles</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Desarrollo Web 1º</td>
+                        <td>15</td>
+                        <td>6</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Administración y Finanzas 2º</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="fila3">
+                        <td>3</td>
+                        <td>Farmacia 1º</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>8</td>
+                    </tr>
+                    <tr class="fila4">
+                        <td>4</td>
+                        <td>Desarrollo Web 2º</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="fila5">
+                        <td>5</td>
+                        <td>Farmacia 2º</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="fila6">
+                        <td>6</td>
+                        <td>Administración y Finanzas 1º</td>
+                        <td>1</td>
+                        <td>6</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+                
+        </div>
+
+        <div class="seccion__tablas futbol mananas">
+            <h2>Futbol Sala (Mañanas)</h2>
+
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>Goles</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Marketing y Publicidad 2º</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>14</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Sistemas Microinformáticos 1º</td>
+                        <td>13</td>
+                        <td>6</td>
+                        <td>11</td>
+                    </tr>
+                    <tr class="fila3">
+                        <td>3</td>
+                        <td>Marketing y Publicidad 1º</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>9</td>
+                    </tr>
+                    <tr class="fila4">
+                        <td>4</td>
+                        <td>Educación Infantil 2º</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>12</td>
+                    </tr>
+                    <tr class="fila5">
+                        <td>5</td>
+                        <td>Sistemas Microinformáticos 2º</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr class="fila6">
+                        <td>6</td>
+                        <td>Educación Infantil 1º</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="fila7">
+                        <td>7</td>
+                        <td>Dietética 2º</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="fila8">
+                        <td>8</td>
+                        <td>Dietética 1º</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="seccion__tablas volley mananas">
+            <h2>Volleyball (Mañanas)</h2>
+
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>P.G.</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Higiene Bucodental 2º</td>
+                        <td>18</td>
+                        <td>6</td>
+                        <td>6</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Integración Social 1º</td>
+                        <td>15</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="fila3">
+                        <td>3</td>
+                        <td>Higiene Bucodental 1º</td>
+                        <td>12</td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="fila4">
+                        <td>4</td>
+                        <td>Automoción 2º</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="fila5">
+                        <td>5</td>
+                        <td>Integración Social 2º</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="fila6">
+                        <td>6</td>
+                        <td>Automoción 1º</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="fila7">
+                        <td>7</td>
+                        <td>Comercio Internacional 2º</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="fila8">
+                        <td>8</td>
+                        <td>Comercio Internacional 1º</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="seccion__tablas volley tarde">
+            <h2>Volleyball (Tardes)</h2>
+
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>P.G.</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Desarrollo Web 1º</td>
+                        <td>16</td>
+                        <td>6</td>
+                        <td>5</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Administración y Finanzas 2º</td>
+                        <td>13</td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="fila3">
+                        <td>3</td>
+                        <td>Farmacia 1º</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="fila4">
+                        <td>4</td>
+                        <td>Desarrollo Web 2º</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="fila5">
+                        <td>5</td>
+                        <td>Farmacia 2º</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="fila6">
+                        <td>6</td>
+                        <td>Administración y Finanzas 1º</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr class="fila7">
+                        <td>7</td>
+                        <td>Emergencias Sanitarias 2º</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="fila8">
+                        <td>8</td>
+                        <td>Emergencias Sanitarias 1º</td>
+                        <td>0</td>
+                        <td>6</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<div class="seccion__tablas baloncesto tarde">
+    <h2>
+        Baloncesto (Tardes)</h2>
+    <table class="tabla__clasificacion" border="1">
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th>Curso</th>
+                <th>Pts</th>
+                <th>P.J.</th>
+                <th>P.G.</th>
+            </tr>
+        </thead>
+        <tbody class="tabla__clasificacion--cuerpo">
+            <tr class="fila1">
+                <td>1</td>
+                <td>Desarrollo Web 2º</td>
+                <td>15</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr class="fila2">
+                <td>2</td>
+                <td>Administración y Finanzas 2º</td>
+                <td>9</td>
+                <td>5</td>
+                <td>3</td>
+            </tr>
+            <tr class="fila3">
+                <td>3</td>
+                <td>Farmacia 2º</td>
+                <td>6</td>
+                <td>5</td>
+                <td>2</td>
+            </tr>
+            <tr class="fila4">
+                <td>4</td>
+                <td>Emergencias Sanitarias 1º</td>
+                <td>0</td>
+                <td>5</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+        <div class="seccion__tablas baloncesto mananas">
+            <h2>Baloncesto (Mañanas)</h2>
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>P.G.</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Integración Social 1º</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Higiene Bucodental 2º</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="fila3">
+                        <td>3</td>
+                        <td>Automoción 1º</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="fila4">
+                        <td>4</td>
+                        <td>Comercio Internacional 2º</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>1</td>
+                    </tr>
+                    <tr class="fila5">
+                        <td>5</td>
+                        <td>Integración Social 2º</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="seccion__tablas pickelball mananas">
+            <h2>Pickleball (Mañanas)</h2>
+            <table class="tabla__clasificacion" border="1">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Curso</th>
+                        <th>Pts</th>
+                        <th>P.J.</th>
+                        <th>P.G.</th>
+                    </tr>
+                </thead>
+                <tbody class="tabla__clasificacion--cuerpo">
+                    <tr class="fila1">
+                        <td>1</td>
+                        <td>Higiene Bucodental 1º</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="fila2">
+                        <td>2</td>
+                        <td>Automoción 2º</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<div class="seccion__tablas pickelball tarde">
+    <h2>Pickleball (Tardes)</h2>
+    <table class="tabla__clasificacion" border="1">
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th>Curso</th>
+                <th>Pts</th>
+                <th>P.J.</th>
+                <th>P.G.</th>
+            </tr>
+        </thead>
+        <tbody class="tabla__clasificacion--cuerpo">
+            <tr class="fila1">
+                <td>1</td>
+                <td>Desarrollo Web 1º</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr class="fila2">
+                <td>2</td>
+                <td>Farmacia 2º</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+        <div class="inicio__cuerpo">
+            <div class="inicio-seccion seccion1">
+                <h3 class="seccion__titulo">Proximos Partidos</h3>
+
+                <div class="inicio--carrusel">
+                    <a href="" class="proximo-torneo">
+                        <div class="torneo__img torneo__img1">
+                            <p class="torneo--turno">Mañanas</p>
+                        </div>
+                        <div class="torneo__info">
+                            <p class="info--titulo">Fase de Grupos: Clasificatoria para 1º y 2º de ESO</p>
+                            <div class="info--fecha">
+                                <p>12 de mayo de 2026</p>
+                                <p>11:00 – 11:30</p>
+                            </div>
+                            <div class="deporteNumero">
+                                <h4>Futbol Sala</h4>
+                                <h4>5 vs 5</h4>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="" class="proximo-torneo">
+                        <div class="torneo__img torneo__img2">
+                            <p class="torneo--turno">Tardes</p>
+                        </div>
+                        <div class="torneo__info">
+                            <p class="info--titulo">Eliminatorias Directas: Octavos de Final Mixto</p>
+                            <div class="info--fecha">
+                                <p>25 de mayo de 2026</p>
+                                <p>18:00 – 18:30</p>
+                            </div>
+                            <div class="deporteNumero">
+                                <h4>Baloncesto</h4>
+                                <h4>3 vs 3</h4>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="" class="proximo-torneo">
+                        <div class="torneo__img torneo__img3">
+                            <p class="torneo--turno">Tarde</p>
+                        </div>
+                        <div class="torneo__info">
+                            <p class="info--titulo">Liguilla Interna: Jornada de Selección de Capitanes</p>
+                            <div class="info--fecha">
+                                <p>14 de mayo de 2026</p>
+                                <p>18:00 – 18:30</p>
+                            </div>
+                            <div class="deporteNumero">
+                                <h4>Voleibol</h4>
+                                <h4>6 vs 6</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="inicio-seccion seccion2">
+                <h3 class="seccion__titulo">Premios Para los Mejores</h3>
+                <div class="seccion2--cuerpo">
+                    <div class="seccion2--img"></div>
+                    <h4>Todos los premios que puedes ganar participando en nuestra competiciones</h4>
+                    <div class="seccion2--texto">
+                        <p>El equipo ganador recibirán una medalla conmemorativa del torneo.
+                        A parte de que el centro les pagará la entrada de su graduación.
+                        </p>
+                        <p>
+                            Si consigues ser unos de los finalistas entrarás en el sorteo de una tarjeta de Amazon de 50€.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+        <div class="fotter--media">
+            <h3>MEDAC</h3>
+            <div class="media--icons">
+                <a href="" class="media--enlace ig"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></a>
+                <a href="" class="media--enlace"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></a>
+                <a href="" class="media--enlace"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></a>
+                <a href="" class="media--enlace"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+<path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+</svg></a>
+            </div>
+        </div>
+
+        <div class="footer--cuerpo">
+            <a href="" class="footer--link">Inicio</a>
+            <a href="" class="footer--link">Torneos</a>
+            <a href="" class="footer--link">Inscripcion</a>
+            <a href="" class="footer--link">Premios</a>
+        </div>
+
+        <div class="footer--creditos">
+            <p>Diseño y Desarrollo Frontend por Pablo Cebrián.</p>
+            <p>Interfaz Responsive optimizada para dispositivos móviles (Mobile-First)</p>
+            <p>Fuentes de Google Fonts: Bebas Neue & Montserrat.</p>
+            <p>Iconos proporcionados por Bootstrap Icons.</p>
+            <p>Estética inspirada en las interfaces de competición de la FNCS (Epic Games)</p>
+        </div>
+    </footer>
+</body>
+</html>
