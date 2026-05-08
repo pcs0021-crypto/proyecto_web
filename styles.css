@@ -96,7 +96,7 @@ label {
     text-decoration: none;
     color: #ddd;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 50px 0;
     width: 100%;
     
 }
@@ -196,11 +196,12 @@ label {
     margin: 100px;
     width: 90vw;
     min-width: 90%;
-    height: 65vh;
+    min-height: 65vh;
     margin: 20px 10px 20px 8px;
     border-radius: 20px;
     box-shadow: 0 0 15px #aaa;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
 
@@ -234,12 +235,13 @@ label {
 }
 
 .torneo__info {
-    height: 35%;
+    min-height: 35%;
     background-color: #444;
     display: flex;
     flex-direction: column;
     color: #fff;
     border-radius: 0 0 20px 20px;
+    padding-bottom: 40px;
 }
 
 .info--titulo {
@@ -512,6 +514,266 @@ footer {
 
 
     /*-----TABLAS-------*/
-
-
 /*-----TORNEOS-------*/
+
+
+/*-----INSCRIPCION-------*/
+.inscripcion__form {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0;
+    font-family: "Montserrat";
+    color: #eee;
+}
+
+.inscripcion__form h2 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1% 0;
+    font-size: 4em;
+    letter-spacing: 10%;
+}
+
+.inscripcion__apartado {
+    margin: 7px auto;
+    width: 80%;
+}
+
+.apartado--select {
+    width: 100%;
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #ddd;
+}
+
+
+.apartado--select option {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 150px 0;
+    color: #111;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.apartado--select option:disabled {
+    color: white;
+}
+
+.inscripcion__apartado p{
+    font-family: "Oswald";
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.turnos--inscripcion {
+    display: flex;
+    flex-direction: column;
+}
+
+.apartado--turno label{
+    font-size: 1.4rem;
+}
+
+
+    /*-----QyA-------*/
+
+.qya__section {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 0;
+    font-family: "Montserrat";
+    color: #eee;
+}
+
+.qya__section h3 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.qya__preguntas {
+}
+
+.qya__preguntas {
+    margin: auto;
+    width: 100%;
+}
+
+.qya__preguntas summary{
+    padding: 15px 2.5%;
+    border-bottom: 0.5px solid #aaa7;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.qya__preguntas p {
+    padding: 20px 20px;
+    text-align: justify;
+    background-color: #333;
+    width: 100%;
+    font-style: italic;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+}
+
+
+    /*-----QyA-------*/
+/*-----INSCRIPCION-------*/
+
+
+/*-----PREMIOS-------*/
+
+.premios__page {
+    font-family: "Bebas Neue";
+    color: #fff;
+}
+
+.premios__page h2 {
+    text-align: center;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 10px;
+}
+
+.premios--section {
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+}
+
+.section--1{
+    border: 1px solid #ffd700;
+    box-shadow: 0 0 10px 0 #ffea00;
+}
+
+.section--2{
+    border: 1px solid #c0c0c0;
+    box-shadow: 0 0 10px 0 #c0c0c0;
+}
+
+.section--3{
+    border: 1px solid #cc8e34;
+    box-shadow: 0 0 10px 0 #cc8e34;
+}
+
+.premio--img1 {
+    background: url(img/1er_puesto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.premio--img2 {
+    background: url(img/2er_puesto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.premio--img3 {
+    background: url(img/3er_puesto.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.premios--img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+    border-radius: 10px;
+    background-color: red;
+}
+
+
+.premios__entrega{
+    background: linear-gradient(#444 40%, #181818);
+    padding: 20px;
+}
+
+.premios__entrega h3 {
+    font-size: 2em;
+    text-wrap: balance;
+    margin: 0;
+}
+
+.entrega--texto p {
+    font-family: "Montserrat";
+    text-align: justify;
+    text-wrap: pretty;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.entrega--info {
+    margin: 20px 0;
+}
+
+.entrega--info h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.entrega--info p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/*-----PREMIOS-------*/
+
+
+
+/*-----RESONPONSIVE-------*/
+
+    /*-----Inicio-------*/
+@media screen and (min-width: 395px) {
+    .portada {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 624px){
+    .inicio-seccion {
+        width: 80%;
+        margin: auto;
+    }
+
+    .seccion2--img {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .inicio--carrusel {
+        justify-content: center;
+    }
+    
+    .proximo-torneo {
+        min-width: 300px;
+        width: 400px;
+        margin-right:20px;
+    }
+
+        .seccion2--img {
+        height: 50vh;
+    }
+}
+
+
+
+
+    /*-----Inicio-------*/
+
+
+
+/*-----RESONPONSIVE-------*/
