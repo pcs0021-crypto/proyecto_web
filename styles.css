@@ -28,7 +28,7 @@ body, header, ul, li, nav, p, div, a {
 /*-----HEADER-------*/
 .header {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 80px;
     justify-content: space-between;
     align-items: center;
@@ -36,6 +36,10 @@ body, header, ul, li, nav, p, div, a {
     background-color: #282828;
     z-index: 1;
     
+}
+
+.header * {
+    padding: 0 0px;
 }
 
 .header__image {
@@ -49,7 +53,7 @@ body, header, ul, li, nav, p, div, a {
 .header__nav-button {
     font-weight: 800;
     color: #fff;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 #nav-checkbox{
@@ -188,29 +192,34 @@ label {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-snap-align: center;
+    
+    padding: 20px;
+    gap: 25px;
 }
 
 .proximo-torneo {
     display: flex;
     flex-direction: column;
-    margin: 100px;
     width: 90vw;
     min-width: 90%;
     min-height: 65vh;
-    margin: 20px 10px 20px 8px;
     border-radius: 20px;
     box-shadow: 0 0 15px #aaa;
     text-decoration: none;
+    gap: 10px;
     padding-bottom: 10px;
 }
 
 
 .torneo__img {
-    height: 65%;
+    height: 240px;
     width: 100%;
+    flex-grow: 1;
     background-position: 60% 50%;
     background-size: cover;
+    flex-shrink: 0;
     border-radius: 20px 20px 0 0;
+    position: relative;
 }
 .torneo__img1 {
     background-image: url(img/futsal_img.png);
@@ -235,13 +244,16 @@ label {
 }
 
 .torneo__info {
-    min-height: 35%;
+    height: 100%;
     background-color: #444;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-grow: 1;
     color: #fff;
     border-radius: 0 0 20px 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .info--titulo {
@@ -316,7 +328,38 @@ label {
     text-align: center;
     margin: 10px;
     font-size: 1.3rem;
+
 }
+
+.seccion3 {
+    margin-top: 20px;ç
+}
+
+.seccion3 .seccion__titulo{
+    font-size: 3em;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.seccion3--cuerpo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.seccion3--cuerpo a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #111;
+    padding: 7px 12px;
+    background-color: #fff;
+    border-radius: 11px;
+}
+
+.seccion3--cuerpo a:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
     /*-----CUERPO-------*/
     
     /*-----FOOTER-------*/
@@ -356,7 +399,7 @@ footer {
 }
 
 .media--enlace:hover {
-    background-color: blue;
+    color: #ffd700;
 }
 
 .footer--cuerpo{
@@ -600,8 +643,6 @@ footer {
     margin: 5px;
 }
 
-.qya__preguntas {
-}
 
 .qya__preguntas {
     margin: auto;
@@ -743,6 +784,77 @@ footer {
 }
 
 @media screen and (min-width: 624px){
+
+    /*NAV RESPONSIVE*/
+    .header {
+        width: 100%;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        height: 80px;
+    }
+
+    .header__nav {
+        height: 100%;
+    }
+
+    .header__image {
+        margin-left: 10px;
+    }
+    
+    .header__nav-button {
+        display: none;
+        
+    }
+    
+    .header__list-nav {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .header__list-item {
+        text-align: center;
+        margin: 0px 0px;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .header__list-item:last-child {
+        margin-right: 10px;
+    }
+    
+    .header__list-item a {
+        font-family: "Bebas Neue";
+        font-size: 2.5rem;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #ddd;
+        box-sizing: border-box;
+        padding: 0 5px;
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+    
+    .header__list-item a:hover {
+        box-sizing: border-box;
+        color: #ffd700;
+        box-shadow: inset 0px -5px 0 0px #ffd700; 
+        z-index: 1000;
+    }
+    
+    /*NAV RESPONSIVE*/
+
     .inicio-seccion {
         width: 80%;
         margin: auto;
@@ -751,21 +863,75 @@ footer {
     .seccion2--img {
         height: 40vh;
     }
+
+    .seccion3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        gap: 30px;
+    }
+
+    .seccion3--cuerpo a{
+    font-size: 3rem;
+}
 }
 
 @media screen and (min-width: 1000px){
+
+    .header__list-item a {
+        font-size: 3rem;
+    }
+
+    .portada {
+        height: 90vh;
+    }
+
+
     .inicio--carrusel {
-        justify-content: center;
+
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-snap-align: center;
+        gap: 25px;
+
+    }
+
+    
+    .inicio-seccion {
+        margin-top: 50px;
+    }
+    .seccion1 {
+        margin-top: 0px;
     }
     
     .proximo-torneo {
         min-width: 300px;
         width: 400px;
-        margin-right:20px;
     }
 
-        .seccion2--img {
-        height: 50vh;
+    .seccion2--texto{
+        width: 70%;
+        margin: auto;
+        text-wrap: pretty;
+    }
+
+    .seccion2--texto h4 {
+        font-size: 3rem;
+    }
+
+    .seccion2--texto p {
+        font-size: 1.8rem;
+    }
+
+    .seccion2--img {
+        height: 65vh;
+    }
+
+    .seccion3 {
+        width: 50%;
     }
 }
 
