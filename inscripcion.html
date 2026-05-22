@@ -21,85 +21,78 @@
             <label class="header__nav-button" for="nav-checkbox">=</label>
             <ul class="header__list-nav">
                 <li class="header__list-item"><a href="index.html">Inicio</a></li>
-                <li class="header__list-item"><a href="#">Torneos</a></li>
-                <li class="header__list-item"><a href="">Inscripcion</a></li>
-                <li class="header__list-item"><a href="">Premios</a></li>
+                <li class="header__list-item"><a href="torneos.html">Torneos</a></li>
+                <li class="header__list-item"><a href="#">Inscripcion</a></li>
+                <li class="header__list-item"><a href="premios.html">Premios</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <form class="inscripcion__form" action="">
+        <div class="inscripcion">
             <h2>Inscribite</h2>
-            <div class="inscripcion__apartado">
-                <p>Nombre y Apellidos: </p>
-                <input type="text" class="apartado--select" placeholder="ej: Sara Sanchez Jimenez">
-            </div>
-
-            <div class="inscripcion__apartado">
-                <p>Correo</p>
-                <input type="email" class="apartado--select" placeholder="ej: sarasanjim@gmail.com">
-            </div>
-
-            <div class="inscripcion__apartado">
-                <p>Elige el deporte al que quieres competir:</p>
-                <select class="apartado--select" name="" id="">
-                    <option selected disabled hidden value="">Elige un Deporte</option>
-                    <option value="">Futbol Sala</option>
-                    <option value="">Volleyball</option>
-                    <option value="">Baloncesto</option>
-                    <option value="">Pickelball</option>
-                </select>
-            </div>
-
-
-            <div class="inscripcion__apartado apartado--turno">
-                <p>¿Cuál es el turno en el que estudias?</p>
-                <div class="turnos--inscripcion">
-                    <div>
-                        <input type="radio" id="manana-option" name="turnos">
-                        <label for="manana-option">Mañanas</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="tarde-option" name="turnos">
-                        <label for="tarde-option">Tardes</label>
+            <form class="inscripcion__form" action="">
+                <div class="inscripcion__apartado">
+                    <p>Nombre y Apellidos: </p>
+                    <input type="text" class="apartado--select" placeholder="ej: Sara Sanchez Jimenez">
+                </div>
+                <div class="inscripcion__apartado">
+                    <p>Correo</p>
+                    <input type="email" class="apartado--select" placeholder="ej: sarasanjim@gmail.com">
+                </div>
+                <div class="inscripcion__apartado">
+                    <p>Elige el deporte al que quieres competir:</p>
+                    <select class="apartado--select" name="" id="">
+                        <option selected disabled hidden value="">Elige un Deporte</option>
+                        <option value="">Futbol Sala</option>
+                        <option value="">Volleyball</option>
+                        <option value="">Baloncesto</option>
+                        <option value="">Pickelball</option>
+                    </select>
+                </div>
+                <div class="inscripcion__apartado apartado--turno">
+                    <p>¿Cuál es el turno en el que estudias?</p>
+                    <div class="turnos--inscripcion">
+                        <div>
+                            <input type="radio" id="manana-option" name="turnos">
+                            <label for="manana-option">Mañanas</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="tarde-option" name="turnos">
+                            <label for="tarde-option">Tardes</label>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="inscripcion__apartado">
+                    <p>¿En que curso estas?</p>
+                    <select class="apartado--select" name="" id="">
+                        <option selected disabled hidden value="">Elige tu Curso</option>
+                        <option value="">1º</option>
+                        <option value="">2º</option>
+                    </select>
+                </div>
+                <div class="inscripcion__apartado">
+                    <p>¿Qué grado estás estudiando?</p>
+                    <select class="apartado--select" name="grado" id="grado">
+                        <option selected disabled hidden value="">Elige tu Grado</option>
+            
+                            <option value="teco">GM TEGI</option>
+                            <option value="tsaf">GS Acondicionamiento Físico (TSAF)</option>
+                            <option value="farmacia">GM Farmacia y Parafarmacia</option>
+                            <option value="higiene">GS Higiene Bucodental</option>
+                            <option value="dietetica">GS Dietética</option>
+                            <option value="laboratorio">GS Laboratorio Clínico y Biomédico</option>
+                            <option value="infantil">GS Educación Infantil</option>
+                            <option value="integracion">GS Integración Social</option>
+                            <option value="daw">GS DAW</option>
+                            <option value="marketing">GS Marketing y Publicidad</option>
+                            <option value="administracion">GS Administración y Finanzas</option>
+                    </select>
+                </div>
+            </form>
+        </div>
 
-            <div class="inscripcion__apartado">
-                <p>¿En que curso estas?</p>
-                <select class="apartado--select" name="" id="">
-                    <option selected disabled hidden value="">Elige tu Curso</option>
-                    <option value="">1º</option>
-                    <option value="">2º</option>
-                </select>
-            </div>
-
-            <div class="inscripcion__apartado">
-                <p>¿Qué grado estás estudiando?</p>
-                <select class="apartado--select" name="grado" id="grado">
-                    <option selected disabled hidden value="">Elige tu Grado</option>
-                    
-                        <option value="teco">GM TEGI</option>
-                        <option value="tsaf">GS Acondicionamiento Físico (TSAF)</option>
-
-                        <option value="farmacia">GM Farmacia y Parafarmacia</option>
-                        <option value="higiene">GS Higiene Bucodental</option>
-                        <option value="dietetica">GS Dietética</option>
-                        <option value="laboratorio">GS Laboratorio Clínico y Biomédico</option>
-
-                        <option value="infantil">GS Educación Infantil</option>
-                        <option value="integracion">GS Integración Social</option>
-
-                        <option value="daw">GS DAW</option>
-                        <option value="marketing">GS Marketing y Publicidad</option>
-                        <option value="administracion">GS Administración y Finanzas</option>
-                </select>
-            </div>
-        </form>
-
-        <div class="qya__section">
+        <div class="qya__section" id="qya__id">
             <h3>Preguntas frecuentes</h3>
             
             <div class="qya__preguntas">
@@ -154,8 +147,8 @@
         <div class="footer--cuerpo">
             <a href="index.html" class="footer--link">Inicio</a>
             <a href="torneos.html" class="footer--link">Torneos</a>
-            <a href="inscripcion.html" class="footer--link">Inscripcion</a>
-            <a href="" class="footer--link">Premios</a>
+            <a href="#" class="footer--link">Inscripcion</a>
+            <a href="premios.html" class="footer--link">Premios</a>
         </div>
 
         <div class="footer--creditos">

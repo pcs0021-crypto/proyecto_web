@@ -156,7 +156,9 @@ label {
 
 .portada__boton {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.8em;
+    text-decoration: none;
+    text-align: center;
+    font-size: 3rem;
     background-color: #eee; 
     width: 50%;
     padding: 5px 0;
@@ -164,6 +166,11 @@ label {
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
+}
+
+.portada__boton:hover {
+    color: #ffd700;
+    background-color: #282828;
 }
     /*-----PORTADA-------*/
     /*-----CUERPO-------*/
@@ -332,7 +339,7 @@ label {
 }
 
 .seccion3 {
-    margin-top: 20px;ç
+    margin-top: 20px;
 }
 
 .seccion3 .seccion__titulo{
@@ -347,7 +354,7 @@ label {
     justify-content: center;
 }
 .seccion3--cuerpo a{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
     color: #111;
     padding: 7px 12px;
@@ -358,6 +365,14 @@ label {
 .seccion3--cuerpo a:hover {
     background-color: #ffd700;
     color: #000;
+}
+
+iframe {
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0 0 20px #fff;
+    border-radius: 15px;
 }
 
     /*-----CUERPO-------*/
@@ -570,7 +585,8 @@ footer {
     color: #eee;
 }
 
-.inscripcion__form h2 {
+.inscripcion h2 {
+    color: #eee;
     font-family: "Bebas Neue";
     text-align: center;
     text-transform: uppercase;
@@ -873,10 +889,37 @@ footer {
 
     .seccion3--cuerpo a{
     font-size: 3rem;
+    }   
+
+    /*INSCRIPCION RESPONSIVE*/
+    .inscripcion__form {
+        background-color: #333;
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        margin-bottom: 50px;
+    }
+
+    .inscripcion__apartado p{
+    font-size: 1.8rem;
 }
+
+    .qya__section {
+    }
+    
+    .qya__preguntas {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    /*INSCRIPCIONM RESPONSIVE*/
 }
 
 @media screen and (min-width: 1000px){
+    .header__list-nav {
+        margin-right: 20px;
+    }
 
     .header__list-item a {
         font-size: 3rem;
@@ -933,6 +976,95 @@ footer {
     .seccion3 {
         width: 50%;
     }
+
+    
+    /*-----TORNEOS-------*/
+
+    .seleccion__deportes {
+        justify-content: center;
+        margin: auto;
+        width: 95vw;
+    }
+
+    .seleccion--turnos label{
+        width: 40%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .deportes__list{
+        width: 95vw;
+        margin: auto;
+    }
+
+    .tabla__clasificacion {
+        width: 95vw;
+        margin: auto;
+    }
+    
+    /*-----TORNEOS-------*/
+
+
+    /*-----Premios-------*/
+    .premios--section {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 2em;
+        padding-bottom: 40px;
+    }
+
+    .premios--img {
+        height: 70vh;
+        width: 100%;
+        margin: auto;
+        box-shadow: 0 0 20px #fff;
+    }
+
+    .premios--text {
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .premios__entrega {
+        width: 75vw;
+        margin: 80px auto;
+        border-radius: 20px;
+    }
+
+    .premios__entrega h3 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .entrega--texto {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .entrega--texto p {
+        font-size: 2em;
+
+    }
+
+    .entrega--info {
+        margin-top: 30px;
+    }
+
+    .entrega--info h4{
+        font-size: 3em;
+    }
+    .entrega--info p{
+        font-size: 1.6em;
+    }
+
+    /*-----PREMIOS-------*/
+
+        /*INSCRIPCION RESPONSIVE*/
+    .inscripcion__form {
+        width: 80%;
+    }
 }
 
 
@@ -941,5 +1073,6 @@ footer {
     /*-----Inicio-------*/
 
 
+    
 
 /*-----RESONPONSIVE-------*/
